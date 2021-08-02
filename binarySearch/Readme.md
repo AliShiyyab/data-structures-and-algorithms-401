@@ -4,7 +4,7 @@
 
 # WhiteBoard
 
-![](binarySearch.PNG)
+![](binary.PNG)
 
 
 # Approach & Efficiency
