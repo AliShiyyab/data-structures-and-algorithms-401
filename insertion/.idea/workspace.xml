@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27018d71-ee06-4725-b61d-e6f93faed33b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/linked/list/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/linked/list/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/insertion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linked-list/src/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/linked/list/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/linked/list/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/src/main/java/Linkedlist/linkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/src/main/java/linkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list/src/test/java/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,15 +80,18 @@
       </method>
     </configuration>
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="linked-list.lib.test" />
+      <module name="insertion" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="linked.list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="adopt-openjdk-1.8" />
       <option name="PACKAGE_NAME" value="linked.list" />
       <option name="MAIN_CLASS_NAME" value="linked.list.LibraryTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />

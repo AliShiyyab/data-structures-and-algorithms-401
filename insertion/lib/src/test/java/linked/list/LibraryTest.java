@@ -66,4 +66,45 @@ public class LibraryTest {
         assertEquals("[ 1 ] -> [ 2 ] -> [ 3 ] -> [ 5 ] -> [ 4 ] -> Null :)" , test.converToString());
     }
 
+    @Test public void testinsert(){
+        LinkedList test = new LinkedList();
+        test.insert(5);
+        test.insert(4);
+        test.insert(3);
+        test.insert(2);
+        test.insert(1);
+        assertEquals("[ 1 ] -> [ 2 ] -> [ 3 ] -> [ 4 ] -> [ 5 ] -> Null :)" , test.converToString());
+    }
+
+    @Test public void testinsert2(){
+        LinkedList test = new LinkedList();
+        test.insert(50);
+        test.insert(40);
+        test.insert(30);
+        test.insert(20);
+        test.insert(10);
+        assertEquals("[ 10 ] -> [ 20 ] -> [ 30 ] -> [ 40 ] -> [ 50 ] -> Null :)" , test.converToString());
+    }
+
+    @Test public void testinsert(){
+        LinkedList test = new LinkedList();
+        test.insert(5);
+        test.insert(4);
+        test.insert(3);
+        test.insert(2);
+        test.insert(1);
+        assertEquals("false" , test.isInclude(13));
+    }
+
+    @Test public void testinsert(){
+        LinkedList test = new LinkedList();
+        test.insert(5);
+        test.insert(4);
+        test.insert(3);
+        test.insert(2);
+        test.insert(1);
+        assertEquals("true" , test.isInclude(1));
+    }
+
+
 }
