@@ -7,6 +7,17 @@ public class Library {
 
     public static void main(String[] args) {
         System.out.println("Ali Code Chalenge 7");
-        
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(4);
+        list.insert(3);
+        list.insert(2);
+        list.insert(1);
+        System.out.println(list.toString());
+        System.out.println(list.linkedlistkth(9));
+        System.out.println(list.linkedlistkth(2));
+        System.out.println(list.linkedlistkth(4));
+        System.out.println(list.linkedlistkth(1));
+        System.out.println(list.linkedlistkth(0));
     }
 }

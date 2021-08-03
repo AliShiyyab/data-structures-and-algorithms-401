@@ -7,8 +7,16 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test public void testLinkedList() {
+        LinkedList list = new LinkedList();
+        list.insert(5);
+        list.insert(4);
+        list.insert(3);
+        list.insert(2);
+        list.insert(1);
+        assertEquals("[ 1 ] -> [ 2 ] -> [ 3 ] -> [ 4 ] -> [ 5 ] -> Null" , list.toString());
+        assertEquals("Exception" , list.linkedlistkth(9));
+        assertEquals("Null" , list.linkedlistkth(0));
+        assertEquals("5" , list.linkedlistkth(1));
     }
 }
