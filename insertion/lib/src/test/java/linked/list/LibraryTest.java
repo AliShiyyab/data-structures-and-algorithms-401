@@ -86,24 +86,24 @@ public class LibraryTest {
         assertEquals("[ 10 ] -> [ 20 ] -> [ 30 ] -> [ 40 ] -> [ 50 ] -> Null :)" , test.converToString());
     }
 
-    @Test public void testinsert(){
+    @Test public void testinsert11(){
         LinkedList test = new LinkedList();
         test.insert(5);
         test.insert(4);
         test.insert(3);
         test.insert(2);
         test.insert(1);
-        assertEquals("false" , test.isInclude(13));
+        assertEquals(false , test.isInclude(13));
     }
 
-    @Test public void testinsert(){
+    @Test public void testinsert22(){
         LinkedList test = new LinkedList();
         test.insert(5);
         test.insert(4);
         test.insert(3);
         test.insert(2);
         test.insert(1);
-        assertEquals("true" , test.isInclude(1));
+        assertEquals(true , test.isInclude(1));
     }
 
 

@@ -1,0 +1,6 @@
+linked/list/zip/Node.java
+ linked.list.zip.Node
+linked/list/zip/LinkedList.java
+ linked.list.zip.LinkedList
+linked/list/zip/Library.java
+ linked.list.zip.Library

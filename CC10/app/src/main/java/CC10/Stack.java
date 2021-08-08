@@ -17,7 +17,7 @@ public class Stack<S> {
     }
 
     public boolean isEmpty(){
-        boolean temp = maxSize > 0 ? true : false;
+        boolean temp = maxSize > 0 ? false : true;
         return temp;
     }
 

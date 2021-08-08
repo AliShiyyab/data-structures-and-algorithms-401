@@ -46,6 +46,13 @@ public class LinkedList {
         System.out.println();
     }
 
+    //Reversed with another way
+    public static void ReversedLinkedList(LinkedList list1){
+        LinkedList list2 = new LinkedList();
+
+    }
+
+
     public static void palendrom(LinkedList list) {
 
     }
