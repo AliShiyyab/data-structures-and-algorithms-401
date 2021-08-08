@@ -1,4 +1,4 @@
-import Linkedlist.linkedList;
+import main.java.linkedList;
 
 public class App{
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println("================================================STACK================================================");
         Stack<Integer> stack = new Stack<>();
-        System.out.println("If the stack is empty return false else return true : " + stack.isEmpty());
+        System.out.println("If the stack is empty return true else return false : " + stack.isEmpty());
         stack.pushStack(1);
         stack.pushStack(2);
         stack.pushStack(3);
@@ -27,7 +27,7 @@ public class App {
         stack.popStack();
         System.out.println(stack.toString());
         System.out.println("Peek after edited value : " + stack.peek());
-        System.out.println("If the stack is empty return false else return true : " + stack.isEmpty());
+        System.out.println("If the stack is empty return true else return false : " + stack.isEmpty());
         System.out.println("================================================QUEUE================================================");
         Queue<Integer> queue = new Queue<>();
         System.out.println("If Empty return false else return True : " + queue.isEmpty());
@@ -40,7 +40,7 @@ public class App {
         queue.enQueue(29);
         queue.enQueue(82);
         System.out.println("The Size of Queue : " + queue.getMaxSize());
-        System.out.println("If Empty return false else return True : " + queue.isEmpty());
+        System.out.println("If Empty return true else return False : " + queue.isEmpty());
         System.out.println("Peek Value before Dequeue is : " + queue.peekQueue());
         System.out.println("The Value is deQueue is : " + queue.deQueue());
         System.out.println("Peek Value after Dequeue is : " + queue.peekQueue());

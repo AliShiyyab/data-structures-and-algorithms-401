@@ -9,6 +9,13 @@ import static org.junit.Assert.*;
 public class AppTest {
     @Test public void testStack() {
         Stack<String> list = new Stack<>();
+        list.pushStack("5");
+        list.pushStack("13");
+        list.pushStack("11");
+        list.popStack();
+        list.popStack();
+        list.popStack();
+        assertEquals(true, list.isEmpty());
         list.pushStack("1");
         list.pushStack("2");
         list.pushStack("3");
@@ -19,19 +26,29 @@ public class AppTest {
         list.pushStack("50");
         list.pushStack("680");
         assertEquals("680" , list.peek());
+        assertEquals("Stack of size and top value is {maxSize=8, top=680}",list.toString());
+        assertEquals(false , list.isEmpty());
     }
     @Test public  void testQueue(){
-        Queue<Integer> queue = new Queue<>();
-        queue.enQueue(11);
-        queue.enQueue(13);
-        queue.enQueue(14);
-        queue.enQueue(15);
-        queue.enQueue(19);
-        queue.enQueue(22);
-        queue.enQueue(29);
-        queue.enQueue(82);
-        assertEquals("{ 11 } -> { 13 } -> { 14 } -> { 15 } -> { 19 } -> { 22 } -> { 29 } -> { 82 } -> Null" , queue.toString());
+        Queue<String> queue = new Queue<>();
+        queue.enQueue("9");
+        queue.enQueue("8");
+        queue.enQueue("7");
         queue.deQueue();
-        assertEquals("{ 13 } -> { 14 } -> { 15 } -> { 19 } -> { 22 } -> { 29 } -> { 82 } -> Null" , queue.toString());
+        queue.deQueue();
+        assertEquals(false,queue.isEmpty());
+        queue.enQueue("11");
+        queue.enQueue("13");
+        queue.enQueue("14");
+        queue.enQueue("15");
+        queue.enQueue("19");
+        queue.enQueue("22");
+        queue.enQueue("29");
+        queue.enQueue("82");
+        assertEquals("{ 7 } -> { 11 } -> { 13 } -> { 14 } -> { 15 } -> { 19 } -> { 22 } -> { 29 } -> { 82 } -> Null" , queue.toString());
+        queue.deQueue();
+        assertEquals("11",queue.peekQueue());
+        assertEquals(false,queue.isEmpty());
+        assertEquals("{ 11 } -> { 13 } -> { 14 } -> { 15 } -> { 19 } -> { 22 } -> { 29 } -> { 82 } -> Null" , queue.toString());
     }
 }
