@@ -12,7 +12,7 @@ public class AppTest {
         list.pushStack("5");
         list.pushStack("13");
         list.pushStack("11");
-        list.popStack();
+        System.out.println(list.popStack());
         list.popStack();
         list.popStack();
         assertEquals(true, list.isEmpty());
@@ -50,5 +50,21 @@ public class AppTest {
         assertEquals("11",queue.peekQueue());
         assertEquals(false,queue.isEmpty());
         assertEquals("{ 11 } -> { 13 } -> { 14 } -> { 15 } -> { 19 } -> { 22 } -> { 29 } -> { 82 } -> Null" , queue.toString());
+    }
+    @Test public void testPseudo(){
+        pseudoQueue<Integer> pseudo = new pseudoQueue<>();
+        pseudo.enQueue(5);
+        System.out.println(pseudo.toString());
+        pseudo.deQueue();
+        pseudo.enQueue(6);
+        System.out.println(pseudo.toString());
+        pseudo.enQueue(7);
+        System.out.println(pseudo.toString());
+        pseudo.enQueue(8);
+        System.out.println(pseudo.toString());
+        pseudo.enQueue(9);
+        System.out.println(pseudo.toString());
+        pseudo.deQueue();
+        assertEquals("pseudoQueue{stack1=Stack of size and top value is {maxSize=3, top=9}}", pseudo.toString());
     }
 }

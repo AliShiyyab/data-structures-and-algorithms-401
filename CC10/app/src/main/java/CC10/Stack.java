@@ -35,17 +35,19 @@ public class Stack<S> {
         }
     }
 
-    public void popStack(){
+    public Object popStack(){
+        Node current = this.top;
         if (isEmpty()){
             System.out.println("Is Null Stack List.");
         }
         else{
-            Node current = this.top;
+
             this.top = this.top.getNext();
             current.setNext(null);
-            System.out.println("The Value in the last Stack and i deleted is : " + current.getData());
+//            System.out.println("The Value in the last Stack and i deleted is : " + );
             maxSize--;
         }
+        return current.getData();
     }
 
     public S peek() {
@@ -56,7 +58,7 @@ public class Stack<S> {
     public String toString() {
         return "Stack of size and top value is {" +
                 "maxSize=" + maxSize +
-                ", top=" + top.getData() +
+                ", top=" + top.getData().toString() +
                 '}';
     }
 }

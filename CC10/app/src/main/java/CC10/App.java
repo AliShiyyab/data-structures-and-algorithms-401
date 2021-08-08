@@ -46,5 +46,15 @@ public class App {
         System.out.println("Peek Value after Dequeue is : " + queue.peekQueue());
         System.out.println("The Size of Queue : " + queue.getMaxSize());
         System.out.println(queue.toString());
+        System.out.println("================================================PseudoQUEUE================================================");
+        pseudoQueue<Integer> pseudo = new pseudoQueue<>();
+        pseudo.enQueue(5);
+        System.out.println(pseudo.toString());
+        pseudo.enQueue(6);
+        pseudo.enQueue(7);
+        pseudo.enQueue(8);
+        pseudo.enQueue(9);
+        pseudo.deQueue();
+        System.out.println(pseudo.toString());
     }
 }
