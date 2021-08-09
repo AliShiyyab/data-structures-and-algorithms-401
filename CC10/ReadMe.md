@@ -1,23 +1,15 @@
-#  Stacks and Queues
+>You need to thinking how i can used to instance from stack
 
-It takes 4 and half of hours.
+>In both Stack and Queue we have first out 
 
-mid level
+>The Difference is in the `In` and can be declare two Stack instance the first one used to push the value and the second one is to reversed to go out in the first.
 
-Source: Enterned and Hana'a descripe
+>Takes nearly of 2 hours
 
-## Challenge
+>Ali Akef Abed AlRahman
 
->This challenge used to solve the data and know ho stack and queue is worked!
+>`Used Speciallest mind thinking ^_^`
 
-## Approach & Efficiency
+>Complixity Big-o(1)
 
->Big-o(1)
-
-## API
-
->**Using isEmpty to return true or false if node is empty**
-
->**Using Queue as FIFO Algorithems Enqueue to intered the value in the last of queue and dequeue to deleted it**
-
->**Using Stack as LIFO Algorithems**
+![](CC11.PNG)
