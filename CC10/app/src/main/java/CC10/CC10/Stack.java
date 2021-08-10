@@ -1,6 +1,4 @@
-package CC10;
-
-import java.util.Arrays;
+package CC10.CC10;
 
 public class Stack<S> {
     private int maxSize ;

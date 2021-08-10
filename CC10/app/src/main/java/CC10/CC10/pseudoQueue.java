@@ -1,4 +1,4 @@
-package CC10;
+package CC10.CC10;
 
 public class pseudoQueue<P> {
     //Internally, utilize 2 Stack instances to create and manage the queue

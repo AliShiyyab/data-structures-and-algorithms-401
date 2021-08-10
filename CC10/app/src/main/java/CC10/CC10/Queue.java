@@ -1,11 +1,11 @@
-package CC10;
+package CC10.CC10;
 
 public class Queue<Q> {
     private Node front;
     private Node rear;
     int maxSize = 0;
 
-    Queue(){
+    public Queue(){
         this.front = null;
         this.rear = null;
     }
