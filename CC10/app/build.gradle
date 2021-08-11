@@ -26,5 +26,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'CC10.App'
+    mainClass = 'src.main.java.CC10.CC10.App'
 }

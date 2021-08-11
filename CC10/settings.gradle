@@ -7,5 +7,5 @@
  * in the user manual at https://docs.gradle.org/7.0.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'CC10'
+rootProject.name = 'src.main.java.CC10.CC10'
 include('app')

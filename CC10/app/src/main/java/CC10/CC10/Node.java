@@ -1,4 +1,4 @@
-package CC10;
+package CC10.CC10;
 
 public class Node<N> {
     private Node<N> next;

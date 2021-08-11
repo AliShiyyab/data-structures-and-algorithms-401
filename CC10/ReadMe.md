@@ -1,15 +1,20 @@
->You need to thinking how i can used to instance from stack
-
->In both Stack and Queue we have first out 
-
->The Difference is in the `In` and can be declare two Stack instance the first one used to push the value and the second one is to reversed to go out in the first.
-
->Takes nearly of 2 hours
-
 >Ali Akef Abed AlRahman
 
->`Used Speciallest mind thinking ^_^`
+>Code Challenge 12 
+
+# Challenge Summary
+
+>Used the queue function to entered the value of animal type if animal type is cat or dogs
+
+## Solution
+
+>Shown in test and run the app class
+
+## Approach & Efficiency
 
 >Complixity Big-o(1)
 
-![](CC11.PNG)
+
+## Whiteboard Process
+
+![](CC12.PNG)
