@@ -75,4 +75,14 @@ public class AppTest {
         AnimalShelter<String> animall = new AnimalShelter<>("dog");
         assertEquals("pref is DOG" , animall.dequeue(animall.getType()));
     }
+
+    @Test public void testBreacket(){
+        App appTest = new App();
+        assertEquals(true , appTest.brackets("{}"));
+        assertEquals(false , appTest.brackets("{[})"));
+        assertEquals(false , appTest.brackets("{"));
+        assertEquals(true , appTest.brackets("{}()[]"));
+        assertEquals(true , appTest.brackets("{}[[Ali]]"));
+        assertEquals(true , appTest.brackets("{}{Code}[Fellows](())"));
+    }
 }
