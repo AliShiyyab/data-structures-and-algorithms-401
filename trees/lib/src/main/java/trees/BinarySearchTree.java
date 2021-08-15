@@ -6,6 +6,7 @@ public class BinarySearchTree<T> extends BinaryTree{
     public BinarySearchTree(Node root){
         this.root= root;
     }
+    public BinarySearchTree(){}
     //add function
     public void add(int value){
         Node node = new Node(value);
