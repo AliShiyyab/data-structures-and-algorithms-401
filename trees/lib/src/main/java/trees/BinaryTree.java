@@ -4,11 +4,13 @@ import java.util.ArrayList;
 
 public class BinaryTree<T> {
     private Node root;
-    private ArrayList list = new ArrayList();
+    private ArrayList<Integer> list = new ArrayList();
 
     public Node getRoot(){
         return root;
     }
+
+    public BinaryTree(){}
 
     public void setRoot(Node root){
         this.root = root;
@@ -17,10 +19,10 @@ public class BinaryTree<T> {
     public String inOrderTraversal(Node focusNode){
         if (focusNode != null){
             inOrderTraversal(focusNode.getLeft());
-            list.add(focusNode.getData());
+            this.list.add(focusNode.getData());
             inOrderTraversal(focusNode.getRight());
         }
-        return list.toString();
+        return this.list.toString();
     }
 
     public String preOrderTraversal(Node focusNode){
@@ -29,38 +31,35 @@ public class BinaryTree<T> {
             preOrderTraversal(focusNode.getLeft());
             preOrderTraversal(focusNode.getRight());
         }
-        return list.toString();
+        return this.list.toString();
     }
 
     public String postOrderTraversal(Node focuseNode){
         if (focuseNode != null){
             postOrderTraversal(focuseNode.getLeft());
             postOrderTraversal(focuseNode.getRight());
-            list.add(focuseNode.getData());
+            this.list.add(focuseNode.getData());
         }
-        return list.toString();
+        return this.list.toString();
     }
 
-    private int maxVal;
+    private Integer maxVal;
 
-    public int getMaxTreeValue(){
-        if (this.root == null){
-            return 0;
-        }
-        this.maxVal = root.getData();
-        Node current = this.root;
-        checkMaxVal(current);
+    public Integer getMax() {
+        if (this.root == null) return null ;
+        this.maxVal = (Integer) this.root.getData();
+        Node current = this.root ;
+        checkMax(current);
         return maxVal;
     }
-
-    private void checkMaxVal(Node node){
-        if (node != null){
-            if (node.getData() > maxVal){
-                maxVal = node.getData();
-            }
-            checkMaxVal(node.getLeft());
+    private void checkMax(Node node){
+        if(node != null) {
+            if ((Integer)node.getData() > this.maxVal) this.maxVal = (Integer) node.getData();
+            checkMax(node.getLeft());
             this.list.add(node.getData());
-            checkMaxVal(node.getRight());
+            checkMax(node.getRight());
         }
     }
+
+
 }
