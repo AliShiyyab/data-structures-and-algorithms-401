@@ -40,4 +40,27 @@ public class BinaryTree<T> {
         }
         return list.toString();
     }
+
+    private int maxVal;
+
+    public int getMaxTreeValue(){
+        if (this.root == null){
+            return 0;
+        }
+        this.maxVal = root.getData();
+        Node current = this.root;
+        checkMaxVal(current);
+        return maxVal;
+    }
+
+    private void checkMaxVal(Node node){
+        if (node != null){
+            if (node.getData() > maxVal){
+                maxVal = node.getData();
+            }
+            checkMaxVal(node.getLeft());
+            this.list.add(node.getData());
+            checkMaxVal(node.getRight());
+        }
+    }
 }
