@@ -1,48 +1,61 @@
 package trees;
 
-public class BinarySearchTree<T> extends BinaryTree{
-    private Node root;
+import org.checkerframework.checker.units.qual.A;
 
-    public BinarySearchTree(Node root){
-        this.root= root;
+import java.util.ArrayList;
+
+public class BinarySearchTree<B> extends BinaryTree{
+    //add and traversal of Add
+    public void add(Integer value){
+        Node<B> node = new Node(value);
+        Node curr;
+        if (this.getRoot() == null){
+            this.setRoot(node);
+        }
+        else{
+            //append the curr node a root value
+            curr = this.getRoot();
+            //send data to traverse function:
+            addTraverse(curr,node);
+        }
     }
-    public BinarySearchTree(){}
-    //add function
-    public void add(int value){
-        Node node = new Node(value);
-        Node previ = null;
-        Node current = root;
-        while(current!=null){
-            if (current.data < value){
-                previ = current;
-                current=current.getRight();
-            }
-            else if(current.data > value){
-                previ = current;
-                current=current.getLeft();
+    private void addTraverse(Node curr, Node node){
+        if ((Integer)node.getData() < (Integer) curr.getData()) {
+            if (curr.getLeft() == null) {
+                curr.setLeft(node);
+            } else {
+                curr = curr.getLeft();
+                addTraverse(curr, node);
             }
         }
-        if(previ.data < value){
-            previ.setRight(node);
-        }else {
-            previ.setLeft(node);
+        else {
+            if (curr.getRight() == null) {
+                curr.setRight(node);
+            } else {
+                curr = curr.getRight();
+                addTraverse(curr, node);
+            }
         }
     }
 
-    //contains:
-    public boolean Contains(int value, Node root){
-        Node current = root;
-        if (root != null){
-            if (value == current.data){
-                return true;
-            }else if(value < current.data){
-                current=current.getLeft();
-                return Contains(value,current);
-            }else{
-                current=current.getRight();
-                return Contains(value,current);
-            }
-        }
-        return false;
+    //containe and traversal
+    public boolean contains(Integer value){
+        Node root = getRoot();
+        return containsTraverse(root, value);
     }
+
+    public boolean containsTraverse(Node root, Integer value){
+        if(root == null){
+            return false;
+        }
+        if((Integer)root.getData() == value){
+            return true;
+        }
+        if((Integer)root.getData() > value) {
+            return containsTraverse(root.getLeft(), value);
+        }else{
+            return containsTraverse(root.getRight(), value);
+        }
+    }
+
 }

@@ -1,33 +1,31 @@
 package trees;
 
-public class Node {
-    int data;
-    private Node rightChild;
-    private Node leftChild;
+public class Node<N> {
+    private N data;
+    private Node<N> right;
+    private Node<N> left;
 
-    public int getData() {
+    public Node(N data){
+        this.data=data;
+    }
+
+    public Node<N> getRight() {
+        return right;
+    }
+
+    public N getData() {
         return data;
     }
 
-    public Node getLeft() {
-        return leftChild;
+    public Node<N> getLeft() {
+        return left;
     }
 
-    public Node getRight() {
-        return rightChild;
+    public void setRight(Node<N> right) {
+        this.right = right;
     }
 
-    public void setLeft(Node left) {
-        this.leftChild = left;
-    }
-
-    public void setRight(Node right) {
-        this.rightChild = right;
-    }
-
-    public Node(int data){
-        this.data = data;
-        this.rightChild=null;
-        this.leftChild=null;
+    public void setLeft(Node<N> left) {
+        this.left = left;
     }
 }
