@@ -45,6 +45,7 @@ public class BinaryTree<B>{
             }
         }
         return this.preOrder.toString();
+
     }
 
     //PostOrder Traversal Function

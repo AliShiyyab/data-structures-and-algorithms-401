@@ -20,6 +20,5 @@ public class Library {
         test2.add(5);
         System.out.println(test2.contains(50));
         System.out.println(test2.getMaxValue());
-
     }
 }
