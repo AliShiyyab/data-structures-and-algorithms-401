@@ -7,8 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
+    @Test public void testBinary(){
+        BinaryTree b = new BinaryTree();
+        b.setRoot(new Node(20));
+        assertEquals(20 , b.getRoot().getData());
+        b.getRoot().setLeft(new Node(10));
+        b.getRoot().setRight(new Node(30));
+        assertEquals(10 , b.getRoot().getLeft().getData());
+        assertEquals(30 , b.getRoot().getRight().getData());
+        assertEquals("[10, 30, 20]" , b.postOrder(b.getRoot()).toString());
+        assertEquals("[10, 20, 30]" , b.inOrder(b.getRoot()).toString());
+        assertEquals("[20, 10, 30]" , b.preOrder(b.getRoot()).toString());
+        assertEquals("30", b.getMaxValue().toString());
     }
 }
