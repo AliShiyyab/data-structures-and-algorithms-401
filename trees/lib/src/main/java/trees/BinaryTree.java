@@ -20,7 +20,7 @@ public class BinaryTree<B>{
     }
 
     //InOrder travesal Function
-    public String inOrder(Node node){
+    public List<B>  inOrder(Node node){
         if (node != null){
             if (node.getLeft() != null) {
                 inOrder(node.getLeft());
@@ -30,11 +30,11 @@ public class BinaryTree<B>{
                 inOrder(node.getRight());
             }
         }
-        return this.inOrder.toString();
+        return this.inOrder;
     }
 
     //PreOrder Traversal Function
-    public String preOrder(Node node){
+    public List<B>  preOrder(Node node){
         if (node != null){
             this.preOrder.add(node.getData());
             if (node.getLeft() != null) {
@@ -44,7 +44,7 @@ public class BinaryTree<B>{
                 preOrder(node.getRight());
             }
         }
-        return this.preOrder.toString();
+        return this.preOrder;
 
     }
 
@@ -59,6 +59,7 @@ public class BinaryTree<B>{
             }
             this.postOrder.add(noed.getData());
         }
+        System.out.println(this.postOrder);
         return this.postOrder;
     }
 

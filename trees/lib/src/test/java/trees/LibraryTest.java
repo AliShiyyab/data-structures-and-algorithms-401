@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 public class LibraryTest {
     @Test public void testBinary(){
         BinaryTree b = new BinaryTree();
+        Library app = new Library();
         b.setRoot(new Node(20));
         assertEquals(20 , b.getRoot().getData());
         b.getRoot().setLeft(new Node(10));
@@ -19,5 +20,6 @@ public class LibraryTest {
         assertEquals("[10, 20, 30]" , b.inOrder(b.getRoot()).toString());
         assertEquals("[20, 10, 30]" , b.preOrder(b.getRoot()).toString());
         assertEquals("30", b.getMaxValue().toString());
+        assertEquals("[20, 10, 30]" , app.breadthFirst(b).toString());
     }
 }
