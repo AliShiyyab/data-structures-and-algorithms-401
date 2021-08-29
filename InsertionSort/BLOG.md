@@ -15,6 +15,8 @@
 
         arr[j + 1] <-- temp
 
+>-----------------------
+
 ## JavaCode
 
     public static int[] InsertionSort(int[] arr){
@@ -30,11 +32,28 @@
             return arr;
         }
 
+>-----------
+
 ## Image Describes:
 
 ![Image](InsertionSort.jpeg)
+
+>-----------
 
 ## Describe: 
 
 >**Selection Sort is a sorting algorithm that traverses the array multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the array which should be incrementally sorted.**
 
+>-------
+
+## Time and Space
+
+>**Time Compixity: Big-o(n^2)**
+
+>**Space: Big-o(1)**
+
+>---------------------
+
+## WhiteBoard
+
+![](WhiteBoard.jpeg)
