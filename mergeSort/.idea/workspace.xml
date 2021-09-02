@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="73a89dea-6e2d-4344-b85f-6bae1e049114" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../QuickSort/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../QuickSort/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/mergeSort/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/mergeSort/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
