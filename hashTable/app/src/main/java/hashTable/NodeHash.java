@@ -1,11 +1,11 @@
 package hashTable;
 
-public class NodeHash {
-    private int index;
-    private int value;
-    NodeHash next;
+public class NodeHash<V,K> {
+    private K index;
+    private V value;
+    NodeHash<V,K> next;
 
-    public NodeHash(int index, int value) {
+    public NodeHash(K index, V value) {
         this.index = index;
         this.value = value;
     }
@@ -14,19 +14,27 @@ public class NodeHash {
 
     }
 
-    public int getIndex() {
+    public void setNext(NodeHash<V,K> next) {
+        this.next = next;
+    }
+
+    public NodeHash<V,K> getNext() {
+        return next;
+    }
+
+    public K getIndex() {
         return index;
     }
 
-    public int getValue() {
+    public V getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(V value) {
         this.value = value;
     }
 
-    public void setIndex(int index) {
+    public void setIndex(K index) {
         this.index = index;
     }
 }
