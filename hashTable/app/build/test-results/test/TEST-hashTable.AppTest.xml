@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hashTable.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T22:12:16" hostname="ali-HP-Notebook" time="0.049">
+  <properties/>
+  <testcase name="appHasAGreeting()" classname="hashTable.AppTest" time="0.049"/>
+  <system-out><![CDATA[{ { Index = 1 } { Value = 23 } } 
+{ { Index = 1 } { Value = 18 } } 
+{ { Index = 0 } { Value = 20 } } 
+{ { Index = 6 } { Value = 31 } } 
+{ { Index = 1 } { Value = 16 } } 
+{ { Index = 4 } { Value = 10 } } 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
