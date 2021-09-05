@@ -19,7 +19,7 @@ Big-O(log(n))
 ## API
 <!-- Description of each method publicly available in each of your hashtable -->
 
-have a tow int params is value and the key of these value
+have a tow K,v params is value and the key of these value
 
 have an add function to added the value in the array
 
