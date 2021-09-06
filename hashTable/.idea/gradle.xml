@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-=======
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -18,5 +15,4 @@
       </GradleProjectSettings>
     </option>
   </component>
->>>>>>> 944b352173e4dd3517ad487e9a2e7d88cb7c6b9e
 </project>
