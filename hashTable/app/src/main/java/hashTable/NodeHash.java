@@ -1,5 +1,6 @@
 package hashTable;
 
+
 public class NodeHash<V,K> {
     private K index;
     private V value;

@@ -23,6 +23,28 @@ class AppTest {
         assertEquals("a" , hashTable2.repeated(b));
         String c = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only";
         assertEquals("it" , hashTable2.repeated(c));
+    }
+  
+    @Test void treeInsertionTest(){
+        BinaryTree<Integer> binaryTree1 = new BinaryTree();
+        binaryTree1.setRoot(new BinaryTreeNode<>(100));
+        binaryTree1.getRoot().setLeft(new BinaryTreeNode<>(50));
+        binaryTree1.getRoot().getLeft().setLeft(new BinaryTreeNode<>(20));
+        binaryTree1.getRoot().getLeft().setRight(new BinaryTreeNode<>(80));
+        binaryTree1.getRoot().setRight(new BinaryTreeNode<>(150));
+        binaryTree1.getRoot().getRight().setLeft(new BinaryTreeNode<>(120));
+        binaryTree1.getRoot().getRight().setRight(new BinaryTreeNode<>(180));
+        BinaryTree<Integer> binaryTree2 = new BinaryTree();
+        binaryTree2.setRoot(new BinaryTreeNode<>(100));
+        binaryTree2.getRoot().setLeft(new BinaryTreeNode<>(35));
+        binaryTree2.getRoot().getLeft().setLeft(new BinaryTreeNode<>(20));
+        binaryTree2.getRoot().getLeft().setRight(new BinaryTreeNode<>(85));
+        binaryTree2.getRoot().setRight(new BinaryTreeNode<>(150));
+        binaryTree2.getRoot().getRight().setLeft(new BinaryTreeNode<>(110));
+        binaryTree2.getRoot().getRight().setRight(new BinaryTreeNode<>(180));
+
+        TreeInsertion<Integer> treeInsertion = new TreeInsertion<>();
+        assertEquals("[100, 20, 150, 180]" , treeInsertion.treeInsertion(binaryTree1,binaryTree2).toString());
 
     }
 }

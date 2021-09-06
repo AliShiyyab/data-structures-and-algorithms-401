@@ -1,12 +1,11 @@
 package hashTable;
 
+
 public class HashTable<V , K> {
     // Array Object of Node
     NodeHash<V,K>[] arrHash;
     int size;
 
-    // Constructor to added a size!
-    // Get the size of array depends on the size of hashes!
     public HashTable(int size) {
         this.arrHash = new NodeHash[size];
         this.size = size;
