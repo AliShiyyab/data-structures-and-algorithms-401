@@ -53,5 +53,6 @@ public class App {
 
         TreeInsertion<Integer> treeInsertion = new TreeInsertion<>();
         System.out.println(treeInsertion.treeInsertion(binaryTree1,binaryTree2).toString());
+
     }
 }
