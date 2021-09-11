@@ -11,6 +11,10 @@ public class HashTable<V , K> {
         this.size = size;
     }
 
+    public HashTable() {
+
+    }
+
     // Hash Function to return the place of value depends on key value
     public int hash(K key) {
         int valueOfArrayIndex = 1;
