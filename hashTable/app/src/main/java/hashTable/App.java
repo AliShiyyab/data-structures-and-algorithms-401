@@ -1,6 +1,11 @@
 package hashTable;
 
-import java.util.Arrays;
+import hashTable.BinaryTree.BinaryTree;
+import hashTable.BinaryTree.BinaryTreeNode;
+import hashTable.Intersection.TreeInsertion;
+import hashTable.leftJoin.leftJoinFun;
+
+import java.util.HashMap;
 
 public class App {
     public static void main(String[] args) {
@@ -54,5 +59,19 @@ public class App {
         TreeInsertion<Integer> treeInsertion = new TreeInsertion<>();
         System.out.println(treeInsertion.treeInsertion(binaryTree1,binaryTree2).toString());
 
+        leftJoinFun LL = new leftJoinFun();
+        HashMap<Object, String> firstTable  = new HashMap<Object, String>();
+        firstTable.put("fond", "enamored");
+        firstTable.put("wrath", "anger");
+        firstTable.put("diligent", "employed");
+        firstTable.put("outift", "garb");
+        HashMap<Object, String> secondTable = new HashMap<Object, String>();
+        secondTable.put("fond", "averse");
+        secondTable.put("wrath", "delight");
+        secondTable.put("diligent", "idle");
+        secondTable.put("outift", "follow");
+
+        System.out.println(LL.leftJoin(firstTable,secondTable));
+        System.out.println(LL.rightJoin(firstTable,secondTable));
     }
 }

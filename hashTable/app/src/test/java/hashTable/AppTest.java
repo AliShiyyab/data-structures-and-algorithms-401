@@ -3,7 +3,16 @@
  */
 package hashTable;
 
+import hashTable.BinaryTree.BinaryTree;
+import hashTable.BinaryTree.BinaryTreeNode;
+import hashTable.Intersection.TreeInsertion;
+import hashTable.leftJoin.leftJoinFun;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -45,6 +54,21 @@ class AppTest {
 
         TreeInsertion<Integer> treeInsertion = new TreeInsertion<>();
         assertEquals("[100, 20, 150, 180]" , treeInsertion.treeInsertion(binaryTree1,binaryTree2).toString());
+    }
+    @Test
+    public void test_leftWithEmptySecondHashMap(){
+        leftJoinFun LL = new leftJoinFun();
+        HashMap<Object, String> firstTable  = new HashMap<Object, String>();
+        firstTable.put("fond", "enamored");
+        firstTable.put("wrath", "anger");
+        firstTable.put("diligent", "employed");
+        firstTable.put("outift", "garb");
+        HashMap<Object, String> secondTable = new HashMap<Object, String>();
+        secondTable.put("fond", "averse");
+        secondTable.put("wrath", "delight");
+        secondTable.put("diligent", "idle");
+        secondTable.put("outift", "follow");
 
+        assertEquals("[diligent: employed, idle, wrath: anger, delight, outift: garb, follow, fond: enamored, averse]" , LL.leftJoin(firstTable,secondTable));
     }
 }

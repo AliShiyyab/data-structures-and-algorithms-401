@@ -1,4 +1,4 @@
-package hashTable;
+package hashTable.BinaryTree;
 
 public class BinaryTreeNode <N> {
     private N data;

@@ -1,4 +1,4 @@
-package hashTable;
+package hashTable.BinaryTree;
 
 import java.util.ArrayList;
 import java.util.List;
