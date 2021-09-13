@@ -1,17 +1,17 @@
 package Graph;
 
 public class Node<N> {
-    N value;
+    String value;
 
-    public N getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(N value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
-    public Node (N value){
+    public Node (String value){
         this.value = value;
     }
 }

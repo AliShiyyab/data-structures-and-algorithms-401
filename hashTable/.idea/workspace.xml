@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf81ee0d-18d8-4bf5-9c20-1bf8c578aab3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/leftJoin/leftJoinFun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graph/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Graph/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -20,13 +19,8 @@
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/TEST-hashTable.AppTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/TEST-hashTable.AppTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/BinaryTree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/BinaryTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/BinaryTree/BinaryTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/TreeInsertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/Intersection/TreeInsertion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/hashTable/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashTable/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashTable/leftJoin/leftJoinFun.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashTable/leftJoin/leftJoinFun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +77,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest.treeInsertionTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hashTable.App" />
       <module name="hashTable.app.main" />
@@ -162,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AppTest.treeInsertionTest" />
         <item itemvalue="Gradle.AppTest.test_leftWithEmptySecondHashMap" />
         <item itemvalue="Gradle.AppTest.appHasAGreeting" />
-        <item itemvalue="Gradle.AppTest.treeInsertionTest" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
